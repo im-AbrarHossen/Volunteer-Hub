@@ -8,15 +8,21 @@ import Slider1 from "../assets/images/slider1.png"
 import Slider2 from "../assets/images/slider2.png"
 import Slider3 from "../assets/images/slider3.png"
 import Slider4 from "../assets/images/slider4.png"
+import Typewriter from 'typewriter-effect';
 
 const Banner = () => {
     return (
         <div>
-            <section className="bg-gradient-to-r from-purple-600 to-purple-400 text-white p-5">
-                <div className="flex flex-col items-center justify-center text-center">
-                    <h1 className="text-4xl md:text-6xl font-bold">Welcome to Volunteer Hub</h1>
-                    <p className="mt-4 text-lg md:text-xl">Connecting volunteers with meaningful opportunities</p>
-                </div>
+            <section className="text-center text-3xl font-bold mb-20 pt-[150px]">
+                <Typewriter
+                    options={{
+                        strings: ['Welcome To Volunteer Hub'],
+                        autoStart: true,
+                        loop: true,
+                        delay: 75, // Typing speed
+                        deleteSpeed: 50, // Speed of deleting characters
+                    }}
+                />
             </section>
             <section>
                 <Swiper

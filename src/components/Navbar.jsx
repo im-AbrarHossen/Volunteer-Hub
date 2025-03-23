@@ -28,8 +28,8 @@ const Navbar = () => {
     const { isDarkMode, toggleDarkMode } = useContext(ThemeContext);
 
     return (
-        <div className='py-5'>
-            <div className="flex justify-between items-center bg-base-100 dark:bg-gray-800 text-black dark:text-white">
+        <div className='py-1 w-11/12 mx-auto'>
+            <div className="flex justify-between items-center text-white">
                 <details className="dropdown lg:hidden">
                     <summary className="btn m-1">
                         <svg
