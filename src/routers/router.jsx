@@ -11,6 +11,7 @@ import ErrorPage from "../pages/ErrorPage";
 import VolunteerNeedPostDetails from "../pages/private pages/VolunteerNeedPostDetails";
 import ManageMyVolunteerNeedPosts from "../pages/private pages/ManageMyVolunteerNeedPosts";
 import UpdatePost from "../pages/private pages/UpdatePost";
+import CounterView from "../features/redux-features/counter/CounterView";
 
 const router = createBrowserRouter([
     {
@@ -65,6 +66,10 @@ const router = createBrowserRouter([
     {
         path: "*",
         element: <ErrorPage></ErrorPage>,
+    },
+    {
+        path: "/practice",
+        element: <CounterView></CounterView>,
     },
 ]);
 
